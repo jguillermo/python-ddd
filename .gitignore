@@ -1,0 +1,16 @@
+logs/
+*__pycache__/
+*Pipfile.lock
+*.vscode/
+*.xz
+*.idea/
+*env/
+*nosetests.xml
+docker/data/*
+.DS_Store
+app/app.yaml
+app/config/config.env
+app/files
+!.gitkeep
+app/cover/*
+app/.coverage
