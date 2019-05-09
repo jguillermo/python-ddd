@@ -1,0 +1,4 @@
+- prefix: '/v1'
+- routes:
+  - /students: src.student.infrastructure.framework.handlers.student.StudentHandler
+
