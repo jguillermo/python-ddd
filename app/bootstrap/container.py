@@ -26,7 +26,7 @@ class EncryptDI:
 
 class EventAdapterDI:
     @staticmethod
-    def aws():
+    def aws_url():
         return ApiWateway(config=ConfigDI.file())
 
 
