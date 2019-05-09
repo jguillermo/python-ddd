@@ -20,6 +20,7 @@ class FalconApi:
             MultipartMiddleware()
         ])
         self.__load_routes('src/user/infrastructure/framework/routes.yml')
+        self.__load_routes('src/student/infrastructure/framework/routes.yml')
 
 
     def __load_routes(self,path_route):

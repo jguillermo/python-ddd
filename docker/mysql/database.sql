@@ -34,8 +34,32 @@ CREATE TABLE `alembic_version` (
 
 LOCK TABLES `alembic_version` WRITE;
 /*!40000 ALTER TABLE `alembic_version` DISABLE KEYS */;
-INSERT INTO `alembic_version` VALUES ('d7ca63b651f1');
+INSERT INTO `alembic_version` VALUES ('a771f926fba3');
 /*!40000 ALTER TABLE `alembic_version` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `reto_student`
+--
+
+DROP TABLE IF EXISTS `reto_student`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `reto_student` (
+  `id` char(36) COLLATE utf8_spanish2_ci NOT NULL,
+  `name` varchar(200) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `last_name` varchar(200) COLLATE utf8_spanish2_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `reto_student`
+--
+
+LOCK TABLES `reto_student` WRITE;
+/*!40000 ALTER TABLE `reto_student` DISABLE KEYS */;
+/*!40000 ALTER TABLE `reto_student` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -71,4 +95,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-08 22:20:03
+-- Dump completed on 2019-05-09 19:44:59
